@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://lvknkgn45m3p"]
+
+[ext_resource type="Script" path="res://ProgressBar.gd" id="1_fcjf2"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_wv4rw"]
+
+[node name="LifeBar" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="." groups=["LifeBarPlayer"]]
+modulate = Color(100, 0, 0, 1)
+self_modulate = Color(0.898039, 0, 0, 1)
+material = SubResource("CanvasItemMaterial_wv4rw")
+layout_mode = 0
+offset_left = -114.0
+offset_top = -14.0
+offset_right = 114.0
+offset_bottom = 15.0
+value = 100.0
+show_percentage = false
+script = ExtResource("1_fcjf2")

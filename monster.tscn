@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmyjjivolcv6t"]
+
+[ext_resource type="Texture2D" uid="uid://do7cucufuvnd1" path="res://assets/monster/monster.png" id="1_c1kpg"]
+[ext_resource type="Script" path="res://Label.gd" id="2_j6j8n"]
+
+[node name="Monster" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 90.0
+offset_bottom = 92.0
+texture = ExtResource("1_c1kpg")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="TextureRect" groups=["monster"]]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 67.0
+offset_right = 111.0
+offset_bottom = 90.0
+script = ExtResource("2_j6j8n")
